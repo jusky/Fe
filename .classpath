@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/beautyeye_lnf.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/fastjson-1.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/jfxrt.jar"/>
+	<classpathentry kind="lib" path="lib/LGoodDatePicker-7.6.3.jar"/>
+	<classpathentry kind="lib" path="lib/metadata-extractor-2.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry kind="lib" path="lib/xmpcore-5.1.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

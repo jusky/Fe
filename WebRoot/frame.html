@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+	font: 14px/1.5em '微软雅黑', 'Microsoft Yahei', Arial, sans-serif;
+}
+body {
+	height: 100%;
+}
+body, ul {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	overflow: auto;
+	list-style: none;
+	position: relative;
+	z-index: 1;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+}
+ul li {
+	float: left;
+	padding: 0;
+	width: 20%;
+}
+ul li a {
+	text-decoration: none;
+	color: #414243;
+	padding: 0.5em 0.7em;
+	display: block;
+	text-align: center;
+	/*-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;*/
+}
+ul li a:hover, ul li a.active {
+	background: #0fa5f3;
+	background: -webkit-linear-gradient(left, #0678cd, #06a5f5, #0678cd);
+	background: linear-gradient(left, #0678cd, #06a5f5, #0678cd);
+	color: #ffffff;
+}
+iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	left: 0;
+	top: 0;
+	position: absolute;
+	padding-top: 35px;
+}
+#background {
+	background-image: url(background.png);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: calc(100% - 35px);
+	position: absolute;
+	top: 35px;
+	left: 0;
+	opacity: 0.5;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+</style>
+
+</head>
+<body>
+<nav>
+	<ul>
+		<li>
+			<a href="1.html" target="frame">通话记录关系图</a>
+		</li>
+		<li>
+			<a href="2.html" target="frame">短信记录关系图</a>
+		</li>
+		<li>
+			<a href="3.html" target="frame">QQ 记录关系图</a>
+		</li>
+		<li>
+			<a href="4.html" target="frame">微信记录关系图</a>
+		</li>
+		<li>
+			<a href="conclusion.html" target="frame">深度关联分析表</a>
+		</li>
+	</ul>
+	<iframe id="frame" name="frame" src="about:blank"></iframe>
+	<div id="background"></div>
+	<script>
+	(function(){
+		// 高亮选中的链接
+		var background = document.getElementById('background');
+		document.querySelector('ul').addEventListener('click', function(event){
+			var target = event.target;
+			if (event.target.tagName.toLowerCase() === 'a' && !target.classList.contains('active')) {
+				background.style.display = 'none';
+				var preActive = document.querySelector('ul a.active');
+				if (preActive) preActive.classList.remove('active');
+				target.classList.add('active');
+			}
+		});
+	})();
+	</script>
+</nav>
+</body>
+</html>

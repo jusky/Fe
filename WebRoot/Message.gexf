@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="phone_class" title="Phone Class" type="integer"/>
+      <attribute id="phone_number" title="Phone Number" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="1" label="测试人员1">
+        <attvalues>
+          <attvalue for="phone_class" value="1"/>
+          <attvalue for="phone_number" value="123456789"/>
+        </attvalues>
+        <viz:size value="42"/>
+        <viz:position x="-302.08237" y="0.0"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="3" label="测试人员3">
+        <attvalues>
+          <attvalue for="phone_class" value="3"/>
+          <attvalue for="phone_number" value="213456789"/>
+        </attvalues>
+        <viz:size value="30"/>
+        <viz:position x="-233.82663" y="-159.94244"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="4" label="测试人员4">
+        <attvalues>
+          <attvalue for="phone_class" value="4"/>
+          <attvalue for="phone_number" value="312345678"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="-7.494629" y="-12.489563"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="2" label="测试人员2">
+        <attvalues>
+          <attvalue for="phone_class" value="2"/>
+          <attvalue for="phone_number" value="671234455"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="316.93127" y="-349.46335"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="5" label="10010">
+        <attvalues>
+          <attvalue for="phone_class" value="3"/>
+          <attvalue for="phone_number" value="877676676"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-95.23947" y="241.47119"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="6" label="冯畅语">
+        <attvalues>
+          <attvalue for="phone_class" value="3"/>
+          <attvalue for="phone_number" value="767676767"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="-331.31567" y="-471.57376"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="10" label="林诗雨">
+        <attvalues>
+          <attvalue for="phone_class" value="4"/>
+          <attvalue for="phone_number" value="124877887"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="-61.187683" y="-346.32205"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="13" label="杨宁">
+        <attvalues>
+          <attvalue for="phone_class" value="2"/>
+          <attvalue for="phone_number" value="565785687"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-40.60208" y="230.14569"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="15" label="乔邦彦">
+        <attvalues>
+          <attvalue for="phone_class" value="3"/>
+          <attvalue for="phone_number" value="456566787"/>
+        </attvalues>
+        <viz:size value="18"/>
+        <viz:position x="383.04297" y="114.23181"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="20" label="阳康">
+        <attvalues>
+          <attvalue for="phone_class" value="1"/>
+          <attvalue for="phone_number" value="533988778"/>
+        </attvalues>
+        <viz:size value="18"/>
+        <viz:position x="-355.8945" y="-449.87183"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="25" label="何翔">
+        <attvalues>
+          <attvalue for="phone_class" value="4"/>
+          <attvalue for="phone_number" value="456766677"/>
+        </attvalues>
+        <viz:size value="18"/>
+        <viz:position x="214.97577" y="83.98468"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="1" source="1" target="2">
+        <attvalues>
+          <attvalue for="Fre" value="10"/>
+        </attvalues>
+      </edge>
+      <edge id="2" source="1" target="3">
+        <attvalues>
+          <attvalue for="Fre" value="11"/>
+        </attvalues>
+      </edge>
+      <edge id="3" source="1" target="4">
+        <attvalues>
+          <attvalue for="Fre" value="12"/>
+        </attvalues>
+      </edge>
+      <edge id="4" source="1" target="5">
+        <attvalues>
+          <attvalue for="Fre" value="16"/>
+        </attvalues>
+      </edge>
+      <edge id="5" source="1" target="13">
+        <attvalues>
+          <attvalue for="Fre" value="10"/>
+        </attvalues>
+      </edge>
+      <edge id="6" source="1" target="20">
+        <attvalues>
+          <attvalue for="Fre" value="18"/>
+        </attvalues>
+      </edge>
+      <edge id="7" source="1" target="25">
+        <attvalues>
+          <attvalue for="Fre" value="20"/>
+        </attvalues>
+      </edge>
+      <edge id="8" source="2" target="5">
+        <attvalues>
+          <attvalue for="Fre" value="5"/>
+        </attvalues>
+      </edge>
+      <edge id="9" source="2" target="4">
+        <attvalues>
+          <attvalue for="Fre" value="5"/>
+        </attvalues>
+      </edge>
+      <edge id="10" source="2" target="6">
+        <attvalues>
+          <attvalue for="Fre" value="14"/>
+        </attvalues>
+      </edge>
+      <edge id="11" source="2" target="15">
+        <attvalues>
+          <attvalue for="Fre" value="16"/>
+        </attvalues>
+      </edge>
+      <edge id="12" source="3" target="15">
+        <attvalues>
+          <attvalue for="Fre" value="4"/>
+        </attvalues>
+      </edge>
+      <edge id="13" source="4" target="25">
+        <attvalues>
+          <attvalue for="Fre" value="56"/>
+        </attvalues>
+      </edge>
+      <edge id="14" source="3" target="25">
+        <attvalues>
+          <attvalue for="Fre" value="32"/>
+        </attvalues>
+      </edge>
+      <edge id="15" source="4" target="20">
+        <attvalues>
+          <attvalue for="Fre" value="20"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

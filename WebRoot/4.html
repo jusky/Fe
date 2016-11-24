@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src="echarts.js"></script>
+    <script src="dataTool.min.js"></script>
+    <script src="jquery-3.1.0.js"></script>
+    <style>
+        @-webkit-keyframes slide {
+            from {
+                -webkit-transform: rotateX(90deg);
+                transform: rotateX(90deg);
+            }
+
+            to {
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+            }
+        }
+        @keyframes slide {
+            from {
+                -webkit-transform: rotateX(90deg);
+                transform: rotateX(90deg);
+            }
+            to {
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+            }
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    #main canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+        .tips {
+            position: absolute;
+            background: #ffffff;
+            padding: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            border-top-left-radius: 0px;
+            min-width: 150px;
+            width: 300px;
+            word-break: break-all;
+            resize: both;
+            -webkit-animation: slide 0.5s ease;
+            animation: slide 0.5s ease;
+            -webkit-transform-origin: top center;
+            transform-origin: top center;
+            font-family: 'Microsoft Yahei';
+            box-sizing: border-box;
+            margin-left: 10px;
+        }
+            .tips::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 10px 10px 0;
+                border-color: transparent #cccccc transparent transparent;
+                position: absolute;
+                top: -1px;
+                left: -10px;
+            }
+            .tips::after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 10px 10px 0;
+                border-color: transparent #ffffff transparent transparent;
+                position: absolute;
+                top: 0px;
+                left: -9px;
+            }
+        .tips-content {
+            overflow: auto;
+            max-height: 200px;
+        }
+        .tips-close {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #f34a4a;
+            line-height: 20px;
+            text-align: center;
+            right: -10px;
+            top: -10px;
+            font-size: 15px;
+            vertical-align: middle;
+            cursor: pointer;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 100%;height:100%;position:relative"></div>
+    <script type="text/javascript">
+        
+        var myChart = echarts.init(document.getElementById('main'));
+        
+        $.get('WeChat.gexf', function (xml) {
+
+            window.xml = xml;
+           
+
+           var graph = echarts.dataTool.gexf.parse(xml);
+           var categories = [];
+           for (var i = 0; i < 5; i++) {
+               categories[i] = {
+                   name: '手机' + i
+               };
+           }
+           console.log(graph);
+           graph.nodes.forEach(function (node) {
+               node.itemStyle = null;
+               node.value = node.symbolSize;
+               node.label = {
+                   normal: {
+                       show: node.symbolSize > 10
+                   }
+               };
+               node.label.normal.show = node.symbolSize > 10;
+               node.category = node.attributes.modularity_class;
+               node.value = node.attributes.phone_number;
+           });
+           graph.links.forEach(function (edge) {
+               console.log(edge)
+               edge.itemStyle = null;
+           });
+           option = {
+               title: {
+                   text: '微信信息',
+                   subtext: 'WeChat Messages',
+                   top: 'bottom',
+                   left: 'right'
+               },
+               tooltip: {},
+               legend: [{
+                   
+                   data: categories.map(function (a) {
+                       return a.name;
+                   })
+               }],
+               animationDurationUpdate: 1500,
+               animationEasingUpdate: 'quinticInOut',
+               series: [
+                   {
+                       name: '联系人',
+                       type: 'graph',
+                       layout: 'circular',
+                       data: graph.nodes,
+                       links: graph.links,
+                       categories: categories,
+                       roam: true,
+                       label: {
+                           normal: {
+                               position: 'right',
+                               formatter: '{b}'
+                           }
+                       },
+                       lineStyle: {
+                           normal: {
+                            
+                               curveness: 0.3
+                           }
+                         
+                       }
+                   }
+               ]
+           };
+
+           var nameList = (function(){
+               var list = {};
+               graph.nodes.forEach(function(elem){
+                   list[elem.id] = elem.name;
+               });
+               return list;
+           })();
+
+           myChart.setOption(option);
+           myChart.on('click', function (params) {
+
+               console.log(params);
+               var tmp = document.getElementsByClassName('tips');
+               for (var i = tmp.length - 1; i >= 0; i--) {
+                   tmp[i].parentElement.removeChild(tmp[i]);
+               };
+
+               if (!params.seriesType) return;
+
+               var callData = [].map.call(xml.querySelectorAll('edge[source="' + params.data.id + '"], edge[target="' + params.data.id + '"]'), function (elem, index) {
+                   return {
+                       id: elem.getAttribute('id'),
+                       source: elem.getAttribute('source'),
+                       target: elem.getAttribute('target'),
+                       sourceName: nameList[elem.getAttribute('source')],
+                       targetName: nameList[elem.getAttribute('target')],
+                       Fre: elem.querySelector('attvalue[for="Fre"]').getAttribute('value'),
+                   };
+               })
+
+               var div = document.createElement("div");
+               var htmlStr = '<span class="tips-close">×</span>\
+                <div class="tips-content">\
+                <table border="1"cellspacing="0" style="width: 100%; text-align: center;">\
+                <tr>\
+                    <th width="50%">联系人</th>\
+                    <th width="50%">短信条数</th>\
+                </tr>';
+               callData.sort(function (a, b) {                               //排序：由大到小
+                   return b.call_fre - a.call_fre;
+               });
+               for (var i = 0; i < callData.length; i++) {
+                   if (callData[i].Fre > 0) {                          //这里可以写一个判断显示出来的条件
+                       htmlStr += '<tr>\
+                       <td>' + (callData[i].target != params.data.id ? callData[i].targetName : callData[i].sourceName) + '</td>\
+                       <td>' + callData[i].Fre + '</td>\
+                   </tr>'
+                   }
+               }
+               htmlStr += '</table></div>';
+               div.innerHTML = htmlStr;
+               div.className = 'tips';
+               div.style.left = params.event.offsetX + 'px';
+               div.style.top = params.event.offsetY + 'px';
+
+               main.appendChild(div);
+
+               div.getElementsByClassName('tips-close')[0].addEventListener('click', function () {
+                   main.removeChild(div);
+               });
+
+           });
+       }, 'xml');
+    </script>
+</body>
+</html>

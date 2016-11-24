@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <graph defaultedgetype="undireted" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="qq_number" title="QQ Number" type="integer"/>
+    </attributes>
+    <nodes>
+      <node id="1" label="成">
+        <attvalues>
+            <attvalue for="phone_class" value="1"/>
+          <attvalue for="qq_number" value="41338186"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="198.9715" y="0.0"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="2" label="フラインの夢">
+        <attvalues>
+          <attvalue for="qq_number" value="1329635759"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-359.18582" y="-456.4369"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="3" label="Taurus">
+        <attvalues>
+          <attvalue for="qq_number" value="840773022"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-300.35257" y="132.20978"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="4" label="没有鱼的大江">
+        <attvalues>
+          <attvalue for="qq_number" value="1511981059"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-416.90945" y="-450.2379"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="5" label="ChenYee">
+        <attvalues>
+          <attvalue for="qq_number" value="340215110"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-12.88681" y="291.33197"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="6" label="苍雪~琴凉谷鹤">
+        <attvalues>
+          <attvalue for="qq_number" value="2456182460"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="388.06873" y="261.68878"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="7" label="火小姐">
+        <attvalues>
+          <attvalue for="qq_number" value="1909116676"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-169.28958" y="-325.01135"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="8" label="不知道起什么">
+        <attvalues>
+          <attvalue for="qq_number" value="1102768366"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-112.25546" y="-400.13824"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="9" label="程林峰">
+        <attvalues>
+          <attvalue for="qq_number" value="1258781610"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-493.53088" y="-257.4889"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="10" label="Zavx">
+        <attvalues>
+          <attvalue for="qq_number" value="2226481698"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="-473.5312" y="80.17767"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="11" label="Siberia">
+        <attvalues>
+          <attvalue for="qq_number" value="996426302"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="-305.0963" y="435.54584"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="12" label="宇智波鼬">
+        <attvalues>
+          <attvalue for="qq_number" value="1138451965"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="-205.79211" y="178.13385"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="13" label="疯子">
+        <attvalues>
+          <attvalue for="qq_number" value="1158439616"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="363.88837" y="8.370941"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="14" label="如影随形">
+        <attvalues>
+          <attvalue for="qq_number" value="1570537516"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="-189.49515" y="151.67407"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="15" label="微分方程齐次通解">
+        <attvalues>
+          <attvalue for="qq_number" value="1468391921"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="197.50586" y="466.2987"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="1" source="1" target="2">
+        <attvalues>
+          <attvalue for="qqchat_num" value="100"/>
+        </attvalues>
+      </edge>
+      <edge id="2" source="2" target="3">
+        <attvalues>
+          <attvalue for="qqchat_num" value="131"/>
+        </attvalues>
+      </edge>
+      <edge id="3" source="3" target="4">
+        <attvalues>
+          <attvalue for="qqchat_num" value="120"/>
+        </attvalues>
+      </edge>
+      <edge id="4" source="4" target="5">
+        <attvalues>
+          <attvalue for="qqchat_num" value="134"/>
+        </attvalues>
+      </edge>
+      <edge id="5" source="5" target="6">
+        <attvalues>
+          <attvalue for="qqchat_num" value="143"/>
+        </attvalues>
+      </edge>
+      <edge id="6" source="6" target="7">
+        <attvalues>
+          <attvalue for="qqchat_num" value="12"/>
+        </attvalues>
+      </edge>
+      <edge id="7" source="7" target="8">
+        <attvalues>
+          <attvalue for="qqchat_num" value="130"/>
+        </attvalues>
+      </edge>
+      <edge id="8" source="8" target="9">
+        <attvalues>
+          <attvalue for="qqchat_num" value="10"/>
+        </attvalues>
+      </edge>
+      <edge id="9" source="9" target="10">
+        <attvalues>
+          <attvalue for="qqchat_num" value="133"/>
+        </attvalues>
+      </edge>
+      <edge id="10" source="10" target="14">
+        <attvalues>
+          <attvalue for="qqchat_num" value="222"/>
+        </attvalues>
+      </edge>
+      <edge id="11" source="11" target="13">
+        <attvalues>
+          <attvalue for="qqchat_num" value="45"/>
+        </attvalues>
+      </edge>
+      <edge id="12" source="12" target="15">
+        <attvalues>
+          <attvalue for="qqchat_num" value="111"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="phone_class" title="Phone Class" type="integer"/>
+      <attribute id="phone_number" title="Phone Number" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="1" label="测试人员1">
+        <attvalues>
+          <attvalue for="phone_class" value="1"/>
+          <attvalue for="phone_number" value="13007126712"/>
+        </attvalues>
+        <viz:size value="42"/>
+        <viz:position x="-49.034058" y="0.0"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="2" label="测试人员2">
+        <attvalues>
+          <attvalue for="phone_class" value="2"/>
+          <attvalue for="phone_number" value="13006302176"/>
+        </attvalues>
+        <viz:size value="30"/>
+        <viz:position x="351.58752" y="-152.58069"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="3" label="测试人员3">
+        <attvalues>
+          <attvalue for="phone_class" value="2"/>
+          <attvalue for="phone_number" value="15071238470"/>
+        </attvalues>
+        <viz:size value="32"/>
+        <viz:position x="49.25464" y="384.76526"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="4" label="测试人员4">
+        <attvalues>
+          <attvalue for="phone_class" value="3"/>
+          <attvalue for="phone_number" value="17771432669"/>
+        </attvalues>
+        <viz:size value="30"/>
+        <viz:position x="86.28894" y="-94.31595"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="5" label="陈若霖">
+        <attvalues>
+          <attvalue for="phone_class" value="3"/>
+          <attvalue for="phone_number" value="877676676"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="318.18646" y="336.08038"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="6" label="冯畅语">
+        <attvalues>
+          <attvalue for="phone_class" value="3"/>
+          <attvalue for="phone_number" value="767676767"/>
+        </attvalues>
+        <viz:size value="6"/>
+        <viz:position x="323.82166" y="299.87384"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="8" label="林诗雨">
+        <attvalues>
+          <attvalue for="phone_class" value="5"/>
+          <attvalue for="phone_number" value="565785687"/>
+        </attvalues>
+        <viz:size value="12"/>
+        <viz:position x="389.8277" y="463.04395"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="9" label="王攀">
+        <attvalues>
+          <attvalue for="phone_class" value="5"/>
+          <attvalue for="phone_number" value="456566787"/>
+        </attvalues>
+        <viz:size value="18"/>
+        <viz:position x="-265.83118" y="-171.02612"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="10" label="杨宁">
+        <attvalues>
+          <attvalue for="phone_class" value="6"/>
+          <attvalue for="phone_number" value="533988778"/>
+        </attvalues>
+        <viz:size value="18"/>
+        <viz:position x="80.565125" y="216.6593"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="11" label="何霖">
+        <attvalues>
+          <attvalue for="phone_class" value="7"/>
+          <attvalue for="phone_number" value="456766677"/>
+        </attvalues>
+        <viz:size value="18"/>
+        <viz:position x="112.20996" y="326.66302"/>
+        <viz:color r="235" g="81" b="72"/>
+      </node>
+      <node id="12" label="张成">
+              <attvalues>
+                <attvalue for="phone_class" value="1"/>
+                <attvalue for="phone_number" value="123456789"/>
+              </attvalues>
+              <viz:size value="10"/>
+              <viz:position x="-49.034058" y="0.0"/>
+              <viz:color r="235" g="81" b="72"/>
+            </node>
+             <node id="13" label="黄笑">
+                          <attvalues>
+                            <attvalue for="phone_class" value="2"/>
+                            <attvalue for="phone_number" value="312345678"/>
+                          </attvalues>
+                          <viz:size value="6"/>
+                          <viz:position x="49.25464" y="384.76526"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+                        <node id="14" label="石智">
+                          <attvalues>
+                            <attvalue for="phone_class" value="3"/>
+                            <attvalue for="phone_number" value="671234455"/>
+                          </attvalues>
+                          <viz:size value="12"/>
+                          <viz:position x="86.28894" y="-94.31595"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+                        <node id="15" label="陈依霖">
+                          <attvalues>
+                            <attvalue for="phone_class" value="3"/>
+                            <attvalue for="phone_number" value="877676676"/>
+                          </attvalues>
+                          <viz:size value="12"/>
+                          <viz:position x="318.18646" y="336.08038"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+                        <node id="16" label="冯彦">
+                          <attvalues>
+                            <attvalue for="phone_class" value="3"/>
+                            <attvalue for="phone_number" value="767676767"/>
+                          </attvalues>
+                          <viz:size value="6"/>
+                          <viz:position x="323.82166" y="299.87384"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+                        <node id="17" label="乔邦彦">
+                          <attvalues>
+                            <attvalue for="phone_class" value="4"/>
+                            <attvalue for="phone_number" value="124877887"/>
+                          </attvalues>
+                          <viz:size value="6"/>
+                          <viz:position x="-357.5403" y="454.17987"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+                        <node id="18" label="林浩天">
+                          <attvalues>
+                            <attvalue for="phone_class" value="3"/>
+                            <attvalue for="phone_number" value="565785687"/>
+                          </attvalues>
+                          <viz:size value="12"/>
+                          <viz:position x="389.8277" y="463.04395"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+                        <node id="19" label="王钦允">
+                          <attvalues>
+                            <attvalue for="phone_class" value="2"/>
+                            <attvalue for="phone_number" value="456566787"/>
+                          </attvalues>
+                          <viz:size value="18"/>
+                          <viz:position x="-265.83118" y="-171.02612"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+                        <node id="20" label="阳康">
+                          <attvalues>
+                            <attvalue for="phone_class" value="4"/>
+                            <attvalue for="phone_number" value="533988778"/>
+                          </attvalues>
+                          <viz:size value="18"/>
+                          <viz:position x="80.565125" y="216.6593"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+                        <node id="21" label="王雄">
+                          <attvalues>
+                            <attvalue for="phone_class" value="3"/>
+                            <attvalue for="phone_number" value="456766677"/>
+                          </attvalues>
+                          <viz:size value="18"/>
+                          <viz:position x="112.20996" y="326.66302"/>
+                          <viz:color r="235" g="81" b="72"/>
+                        </node>
+            <node id="30" label="赵承乾">
+              <attvalues>
+                <attvalue for="phone_class" value="2"/>
+                <attvalue for="phone_number" value="213456789"/>
+              </attvalues>
+              <viz:size value="10"/>
+              <viz:position x="351.58752" y="-152.58069"/>
+              <viz:color r="235" g="81" b="72"/>
+            </node>
+
+    </nodes>
+    <edges>
+      <edge id="1" source="1" target="2">
+        <attvalues>
+          <attvalue for="call_fre" value="10"/>
+        </attvalues>
+      </edge>
+      <edge id="2" source="1" target="3">
+        <attvalues>
+          <attvalue for="call_fre" value="11"/>
+        </attvalues>
+      </edge>
+      <edge id="3" source="1" target="4">
+        <attvalues>
+          <attvalue for="call_fre" value="12"/>
+        </attvalues>
+      </edge>
+      <edge id="4" source="1" target="5">
+        <attvalues>
+          <attvalue for="call_fre" value="16"/>
+        </attvalues>
+      </edge>
+      <edge id="5" source="2" target="3">
+        <attvalues>
+          <attvalue for="call_fre" value="10"/>
+        </attvalues>
+      </edge>
+      <edge id="6" source="3" target="2">
+        <attvalues>
+          <attvalue for="call_fre" value="18"/>
+        </attvalues>
+      </edge>
+      <edge id="7" source="1" target="2">
+        <attvalues>
+          <attvalue for="call_fre" value="20"/>
+        </attvalues>
+      </edge>
+      <edge id="8" source="2" target="5">
+        <attvalues>
+          <attvalue for="call_fre" value="5"/>
+        </attvalues>
+      </edge>
+      <edge id="9" source="2" target="4">
+        <attvalues>
+          <attvalue for="call_fre" value="5"/>
+        </attvalues>
+      </edge>
+      <edge id="10" source="2" target="6">
+        <attvalues>
+          <attvalue for="call_fre" value="14"/>
+        </attvalues>
+      </edge>
+      <edge id="11" source="2" target="10">
+        <attvalues>
+          <attvalue for="call_fre" value="16"/>
+        </attvalues>
+      </edge>
+      <edge id="12" source="3" target="4">
+        <attvalues>
+          <attvalue for="call_fre" value="4"/>
+        </attvalues>
+      </edge>
+      <edge id="13" source="3" target="5">
+        <attvalues>
+          <attvalue for="call_fre" value="56"/>
+        </attvalues>
+      </edge>
+      <edge id="14" source="1" target="21">
+        <attvalues>
+          <attvalue for="call_fre" value="32"/>
+        </attvalues>
+      </edge>
+      <edge id="15" source="2" target="20">
+        <attvalues>
+          <attvalue for="call_fre" value="20"/>
+        </attvalues>
+      </edge>
+      <edge id="16" source="3" target="6">
+             <attvalues>
+                <attvalue for="call_fre" value="10"/>
+              </attvalues>
+            </edge>
+            <edge id="17" source="3" target="9">
+              <attvalues>
+                <attvalue for="call_fre" value="11"/>
+              </attvalues>
+            </edge>
+            <edge id="18" source="3" target="12">
+              <attvalues>
+                <attvalue for="call_fre" value="12"/>
+              </attvalues>
+            </edge>
+            <edge id="19" source="3" target="15">
+              <attvalues>
+                <attvalue for="call_fre" value="16"/>
+              </attvalues>
+            </edge>
+            <edge id="20" source="3" target="18">
+              <attvalues>
+                <attvalue for="call_fre" value="10"/>
+              </attvalues>
+            </edge>
+            <edge id="21" source="4" target="8">
+              <attvalues>
+                <attvalue for="call_fre" value="18"/>
+              </attvalues>
+            </edge>
+            <edge id="22" source="4" target="18">
+              <attvalues>
+                <attvalue for="call_fre" value="20"/>
+              </attvalues>
+            </edge>
+            <edge id="23" source="4" target="10">
+              <attvalues>
+                <attvalue for="call_fre" value="5"/>
+              </attvalues>
+            </edge>
+            <edge id="24" source="4" target="9">
+              <attvalues>
+                <attvalue for="call_fre" value="5"/>
+              </attvalues>
+            </edge>
+            <edge id="25" source="4" target="13">
+              <attvalues>
+                <attvalue for="call_fre" value="14"/>
+              </attvalues>
+            </edge>
+            <edge id="26" source="2" target="15">
+              <attvalues>
+                <attvalue for="call_fre" value="16"/>
+              </attvalues>
+            </edge>
+            <edge id="27" source="4" target="15">
+              <attvalues>
+                <attvalue for="call_fre" value="4"/>
+              </attvalues>
+            </edge>
+            <edge id="28" source="4" target="25">
+              <attvalues>
+                <attvalue for="call_fre" value="56"/>
+              </attvalues>
+            </edge>
+            <edge id="29" source="1" target="25">
+              <attvalues>
+                <attvalue for="call_fre" value="32"/>
+              </attvalues>
+            </edge>
+            <edge id="30" source="4" target="20">
+              <attvalues>
+                <attvalue for="call_fre" value="20"/>
+              </attvalues>
+            </edge>
+            <edge id="30" source="3" target="30">
+                          <attvalues>
+                            <attvalue for="call_fre" value="20"/>
+                          </attvalues>
+                        </edge>
+            <edge id="31" source="4" target="14">
+                          <attvalues>
+                            <attvalue for="call_fre" value="20"/>
+                          </attvalues>
+                        </edge>
+             <edge id="32" source="4" target="20">
+                           <attvalues>
+                             <attvalue for="call_fre" value="20"/>
+                           </attvalues>
+                         </edge>
+                         <edge id="33" source="1" target="16">
+                                       <attvalues>
+                                         <attvalue for="call_fre" value="20"/>
+                                       </attvalues>
+                                     </edge>
+                                     <edge id="34" source="4" target="17">
+                                                   <attvalues>
+                                                     <attvalue for="call_fre" value="20"/>
+                                                   </attvalues>
+                                     </edge>
+                                     <edge id="30" source="1" target="19">
+                                                   <attvalues>
+                                                     <attvalue for="call_fre" value="20"/>
+                                                   </attvalues>
+                                                 </edge>
+                                                 <edge id="30" source="2" target="19">
+                                                                                                    <attvalues>
+                                                                                                      <attvalue for="call_fre" value="20"/>
+                                                                                                    </attvalues>
+                                                                                                  </edge>
+                    <edge id="30" source="3" target="19">
+                                                                       <attvalues>
+                                                                         <attvalue for="call_fre" value="20"/>
+                                                                       </attvalues>
+                                                                     </edge>
+                                                                     <edge id="30" source="4" target="19">
+                                                                                                                        <attvalues>
+                                                                                                                          <attvalue for="call_fre" value="20"/>
+                                                                                                                        </attvalues>
+                                                                                                                      </edge>
+    </edges>
+  </graph>
+</gexf>

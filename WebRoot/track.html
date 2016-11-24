@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>追踪</title>
+    <style type="text/css">
+        html{height:100%}
+        body{height:100%;margin:0px;padding:0px}
+        #container{height:100%}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=e0LCl6AUrkRnAKT00H7jS3CP6WmqSSNY"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/MapWrapper/1.2/src/MapWrapper.min.js"></script>
+    
+</head>
+<body>
+<div id="container"></div>
+<script type="text/javascript" src="show_map.js"></script>
+<script type="text/javascript" src="photoinfo.js"></script>
+<script type="text/javascript">
+    for (var i = 0; i < photoInfoList.length; i++) {
+        var d = new Date();
+        d.setTime(photoInfoList[i].date);
+        var thisPhotoInfo = new photoInfo(photoInfoList[i].location.latitude, photoInfoList[i].location.longitude,
+                d.toLocaleString('zh-CN', {hour12: false}), photoInfoList[i].filename);
+        //document.write(photoInfoList[i].location.latitude + photoInfoList[i].location.longitude +
+                //dateString + photoInfoList[i].filename)
+        addMarker(thisPhotoInfo);
+    }
+</script>
+</body>
+</html>
